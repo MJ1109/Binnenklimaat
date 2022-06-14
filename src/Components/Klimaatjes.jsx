@@ -4,13 +4,13 @@ import Reactpip from 'react-picture-in-picture'
 
 function Klimaatjes() {
     const [active, setActive] = useState(false)
-    const [video, setVideo] = useState("assets/nyancat-placeholder.mp4")
+    const [video, setVideo] = useState("assets/goed co2.mp4")
 
     function pickVideo() {
         let random = Math.random()
         if (random > 0.5) {
             console.log('0.5 < ' + random)
-            setVideo("assets/bobsplant.mp4")
+            setVideo("assets/nog heel even co2.mp4")
         }
     }
     
