@@ -1,5 +1,6 @@
 #pip-video{
-    width: 50vw;
+    width: 40vw;
+    border: solid 5px;
 }
 
 #toggle-button{
@@ -20,4 +21,12 @@
 #toggle-button:hover {
     background-color: #555555;
     color: white;
+}
+
+#todo{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    text-align: center;
 }

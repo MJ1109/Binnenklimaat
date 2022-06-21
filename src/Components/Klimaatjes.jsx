@@ -11,20 +11,41 @@ function Klimaatjes() {
         let random = Math.random()
         if (random > 0.5) {
             console.log('0.5 < ' + random)
-            setVideo("assets/nog heel even co2.mp4")
+            setVideo("assets/te hoog.mp4")
         }
+    }
+
+    function GoodCo2(props) {
+        return <h1>Op dit moment is het klimaat goed!</h1>
+    }
+
+    function BadCo2(props) {
+        return <h1>Op dit moment is het klimaat slecht, CO2 is erg hoog doe een raam open!</h1>
+    }
+
+    // function OnWayCo2(props) {
+    //     return <h1>Op dit moment gaat het wat beter met het klimaat, CO2 bijna in orde!</h1>
+    // }
+
+    function Co2(props) {
+        const howHighCo2 = props.howHighCo2;
+        if (howHighCo2) {
+            return <GoodCo2 />
+        }
+        return <BadCo2 />
     }
 
     pickVideo()
 
     return(
         <div>
-            <h1>HELLO IK BEN KLIMAATJE</h1>
             <Reactpip isActive= {active} controls= {false} autoplay= {true} loop= {true} muted= {true} id='pip-video'>
                 <source src= {video}/>
             </Reactpip>
-            <p></p>
-            <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>
+            <Co2></Co2>
+            <div>
+                <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>
+            </div>
         </div>
     )
 }
