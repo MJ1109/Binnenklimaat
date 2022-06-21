@@ -42,6 +42,7 @@ function Klimaatjes() {
                 <source src= {video}/>
             </Reactpip>
             <Co2></Co2>
+            <p>Voor meer informatie over co2 kunt u hier klikken.</p>
             <div>
                 <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>
             </div>
