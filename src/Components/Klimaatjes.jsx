@@ -18,7 +18,7 @@ function Klimaatjes() {
 
     return(
         <div>
-            <h1>HELLO IK BEN KLIMAATJES</h1>
+            <h1>HELLO WIJ ZIJN DE KLIMAATJES</h1>
             <Reactpip isActive= {active} controls= {false} autoplay= {true} loop= {true} muted= {true} id='pip-video'>
                 <source src= {video}/>
             </Reactpip>
