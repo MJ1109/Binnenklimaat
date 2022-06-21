@@ -22,10 +22,6 @@ function Klimaatjes() {
         setActive(true)
     }, [video])
 
-    useEffect(() => {
-        console.log(active);
-    }, [active])
-
     function Co2() {
         if (co2 < 800) {
             console.log('CO2 goed');
@@ -44,12 +40,10 @@ function Klimaatjes() {
             console.log('CO2 goed');
             setVideo('assets/goed co2.mp4')
             setKlimaatjeText('Op dit moment is het klimaat goed!')
-            // return <GoodCo2 />
         } else if (co2 >= 800) {
             console.log('CO2 slecht');
             setVideo('assets/te hoog.mp4')
             setKlimaatjeText('Op dit moment is het klimaat slecht, CO2 is erg hoog doe een raam open!')
-            // return <BadCo2 />
         }
     }, [co2])
 
