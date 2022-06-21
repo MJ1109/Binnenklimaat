@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import '../style/klimaatjes.scss'
 import Reactpip from 'react-picture-in-picture'
 
-
 function Klimaatjes() {
     const [active, setActive] = useState(false)
     const [video, setVideo] = useState("assets/goed co2.mp4")
