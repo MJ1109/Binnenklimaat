@@ -5,15 +5,16 @@ import Reactpip from 'react-picture-in-picture'
 function Klimaatjes() {
     const [active, setActive] = useState(false)
     const [video, setVideo] = useState("assets/goed co2.mp4")
+    const [co2, setCo2] = useState(1000)
+    const [klimaatjeText, setKlimaatjeText] = useState('')
 
     useEffect(() => {
         // Change video after 1000 ms
         setTimeout(() => {
-            console.log('Set video to Bobsplant')
-            setVideo("assets/bobsplant.mp4")
-            setActive(false)
+            console.log(`set CO2`);
+            setCo2(Math.random() * 1200)
         }, 3000)
-    }, [])
+    }, [co2])
 
     // Log when video changes
     useEffect(() => {
@@ -23,28 +24,34 @@ function Klimaatjes() {
 
     useEffect(() => {
         console.log(active);
-
     }, [active])
 
-    function GoodCo2() {
-        return <h1>Op dit moment is het klimaat goed!</h1>
-    }
-
-    function BadCo2() {
-        return <h1>Op dit moment is het klimaat slecht, CO2 is erg hoog doe een raam open!</h1>
-    }
-
-    // function OnWayCo2(props) {
-    //     return <h1>Op dit moment gaat het wat beter met het klimaat, CO2 bijna in orde!</h1>
-    // }
-
-    function Co2(props) {
-        const howHighCo2 = props.howHighCo2;
-        if (howHighCo2) {
-            return <GoodCo2 />
+    function Co2() {
+        if (co2 < 800) {
+            console.log('CO2 goed');
+            setVideo('assets/goed co2.mp4')
+            setKlimaatjeText('Op dit moment is het klimaat goed!')
+        } else if (co2 >= 800) {
+            console.log('CO2 slecht');
+            setVideo('assets/te hoog.mp4')
+            setKlimaatjeText('Op dit moment is het klimaat slecht, CO2 is erg hoog doe een raam open!')
         }
-        return <BadCo2 />
     }
+
+    // Check the state of the Klimaatje when the CO2 changes
+    useEffect(() => {
+        if (co2 < 800) {
+            console.log('CO2 goed');
+            setVideo('assets/goed co2.mp4')
+            setKlimaatjeText('Op dit moment is het klimaat goed!')
+            // return <GoodCo2 />
+        } else if (co2 >= 800) {
+            console.log('CO2 slecht');
+            setVideo('assets/te hoog.mp4')
+            setKlimaatjeText('Op dit moment is het klimaat slecht, CO2 is erg hoog doe een raam open!')
+            // return <BadCo2 />
+        }
+    }, [co2])
 
     return(
         <div>
@@ -53,6 +60,7 @@ function Klimaatjes() {
                 <source id='source' src= {video}/>
             </Reactpip>
             <Co2></Co2>
+            <h2>{klimaatjeText}</h2>
             <p>Voor meer informatie over co2 kunt u hier klikken.</p>
             <div>
                 <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>
