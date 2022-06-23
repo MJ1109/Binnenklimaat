@@ -49,7 +49,6 @@ function Klimaatjes() {
 
     return(
         <div>
-            <h1>KLIMAATJES</h1>
             <Reactpip key={video} isActive= {active} controls= {false} autoplay= {true} loop= {true} muted= {true} id='pip-video'>
                 <source id='source' src= {video}/>
             </Reactpip>
