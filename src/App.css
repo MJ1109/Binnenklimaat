@@ -2,6 +2,6 @@
   text-align: center;
   font-family: Baloo Tamma '2', 'cursive', 'sans-serif';
   overflow: hidden;
-  bbackground: rgb(199,249,204);
+  background: rgb(199,249,204);
   background: linear-gradient(180deg, rgba(199,249,204,1) 21%, rgba(128,237,153,1) 42%, rgba(87,204,153,1) 60%, rgba(56,163,165,1) 76%, rgba(34,87,122,1) 92%);
 }
