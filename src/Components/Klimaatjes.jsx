@@ -49,12 +49,16 @@ function Klimaatjes() {
 
     return(
         <div>
-            <h1>KLIMAATJES</h1>
-            <Reactpip key={video} isActive= {active} controls= {false} autoplay= {true} loop= {true} muted= {true} id='pip-video'>
+            <Reactpip key={video} 
+                isActive= {active} 
+                controls= {false} 
+                autoplay= {true} 
+                loop= {true} 
+                muted= {true} 
+                id='pip-video'>
                 <source id='source' src= {video}/>
             </Reactpip>
-            <Co2></Co2>
-            <h2>{klimaatjeText}</h2>
+            <h2 class="descPipVid">{klimaatjeText}</h2>
             <p>Voor meer informatie over co2 kunt u hier klikken.</p>
             <div>
                 <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>

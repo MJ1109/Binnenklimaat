@@ -1,6 +1,10 @@
 #pip-video{
-    width: 40vw;
-    border: solid 5px;
+    width: 25vw;
+    border: solid 3px;
+    border-color: #38A3A5;
+}
+.descPipVid{
+    max-width: 20vw;
 }
 
 #toggle-button{
@@ -15,14 +19,11 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-
-}
-      
+} 
 #toggle-button:hover {
     background-color: #555555;
     color: white;
 }
-
 #todo{
     width: 300px;
     height: 100px;
