@@ -6,14 +6,14 @@ import '../style/header.scss'
 function Header () {
   return ( 
     <div>
-      <img src = {skyline} alt="The skyline of Rotterdam" class="skyline"/>
+      <img src = {skyline} alt="The skyline of Rotterdam" className="skyline"/>
       <h1 className="title">De Klimaatjes</h1>
       
-      <div class="titleParent">
+      <div className="titleParent">
         <div className="subtitleParent"> 
-          <Line color="#57CC99" class="lineL"/>
+          <Line color="#57CC99" className="lineL"/>
           <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes!</h3>
-          <Line color="#57CC99" class="lineR"/>
+          <Line color="#57CC99" className="lineR"/>
         </div>
 
       </div>
