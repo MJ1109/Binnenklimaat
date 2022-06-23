@@ -1,5 +1,4 @@
 import './App.css';
-import Klimaatjes from './Components/Klimaatjes';
 import Header from './Components/Header'
 import KlimaatjesSection from './Components/KlimaatjesSection';
 

@@ -1,14 +1,17 @@
+.pipParent{
+    align-items: center;
+    height: 100vh;
+}
 #pip-video{
     width: 25vw;
     border: solid 3px;
     border-color: #38A3A5;
+    border-radius: 7px;
+    margin-right: 4vw;
+    margin-left: 4vw;
 }
-.descPipVid{
-    max-width: 20vw;
-}
-
 #toggle-button{
-    background-color: white;
+    background-color: #599FAA;
     color: black;
     border: 2px solid #555555;
     padding: 16px 32px;
@@ -19,9 +22,10 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 7px;
 } 
 #toggle-button:hover {
-    background-color: #555555;
+    background-color: #38A3A5;
     color: white;
 }
 #todo{
