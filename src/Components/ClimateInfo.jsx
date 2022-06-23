@@ -1,5 +1,5 @@
 import Line from './svg/line';
-
+import '../style/climateInfo.scss'
 
 function ClimateInfo() {
 
@@ -13,8 +13,17 @@ function ClimateInfo() {
                 <Line color="#57CC99" class="lineR"/>
                 </div>
             </div>
-            <div>
-                HALLO UITLEG
+            <div className='climateInfo'>
+                <div className='flex-column'>
+                    <p>Te hoge CO2 kan zorgen voor klachten zoals hoofdpijn, vermoeidheid en sufheid</p>
+                    <p>Te hoge of lage temperatuur kan zorgen voor verslechterde concentratie </p>
+                    <p>Een goede binnentemperatuur is tussen de 18°C en 22°C</p>
+                </div>
+                <div className='flex-column'>
+                    <p>Te hoge luchtvochtigheid is slecht voor de longen en kan zorgen voor schimmels in de ruimte</p>
+                    <p>Te lage luchtvochtigheid kan zorgen voor droge ogen, vooral bij lenzendragers.</p>
+                    <p>De luchtvochigheid moet tussen de 40% en 60% zitten</p>
+                </div>
             </div>
         </div>
      );
