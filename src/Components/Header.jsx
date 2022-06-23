@@ -1,4 +1,3 @@
-import '../style/klimaatjes.scss'
 import Line from './svg/line';
 import skyline from '../assets/img/skyline.png';
 import '../style/header.scss'
@@ -11,9 +10,10 @@ function Header () {
       
       <div className="titleParent">
         <div className="subtitleParent"> 
-          <Line color="#57CC99" className="lineL"/>
-          <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes!</h3>
-          <Line color="#57CC99" className="lineR"/>
+          <Line color="#57CC99" class="lineL"/>
+          <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes! <br/>
+          Kies welk klimaatje jij in de klas wilt hebben en wat hij vindt van het binnenklimaat. </h3>
+          <Line color="#57CC99" class="lineR"/>
         </div>
 
       </div>

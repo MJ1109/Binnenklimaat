@@ -55,7 +55,7 @@ function Klimaatjes({name}) {
     }, 7000);
 
     return(
-        <div>
+        <div class="pipParent">
             <Reactpip key={video} 
                 isActive= {active} 
                 controls= {false} 
@@ -68,7 +68,7 @@ function Klimaatjes({name}) {
             <h2 className="descPipVid">{klimaatjeText}</h2>
             <p>Voor meer informatie over co2 kunt u hier klikken.</p>
             <div>
-                <button id='toggle-button' onClick = {() => setActive(!active)}>Toggle Picture in Picture</button>
+                <button id='toggle-button' onClick = {() => setActive(!active)}>Kies mij!</button>
             </div>
         </div>
     )
