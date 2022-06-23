@@ -1,4 +1,3 @@
-import '../style/klimaatjes.scss'
 import Line from './svg/line';
 import skyline from '../assets/img/skyline.png';
 import '../style/header.scss'
