@@ -7,16 +7,16 @@ function Header () {
   return ( 
     <div>
       <img src = {skyline} alt="The skyline of Rotterdam" class="skyline"/>
+      <h1 className="title">De Klimaatjes</h1>
       
-      <div className="title"> 
-        <Line color="#57CC99" class="lineL"/>
-        <h1 className="titletxt">De Klimaatjes</h1>
-        <Line color="#57CC99" class="lineR"/>
-      </div>
+      <div class="titleParent">
+        <div className="subtitleParent"> 
+          <Line color="#57CC99" class="lineL"/>
+          <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes!</h3>
+          <Line color="#57CC99" class="lineR"/>
+        </div>
 
-      
-      <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes!</h3>
-      
+      </div>
     </div>
   );
 }

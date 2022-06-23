@@ -3,27 +3,31 @@
     border:0px;
     padding: 0px;    
 }
-
 .skyline{
     width: 100vw;
     height: auto;
     margin-bottom: 0px;
     background-color: #fff;
 }
-
 .title{
-    background-color: #C7FACC;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content:center ;
+    color: #fff;
+}
+.titleParent{
+    display: flex;
+    flex-direction: column;
+}
+.subtitleParent{
     width: 100%;
     display: flex;
     margin: 0px;
     align-content: space-between;
-
-    .titletxt{
-        margin: 2%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        width: 50%;
-        justify-content:center ;
-        color: #fff;
-    }
+}
+.subtitle{
+    color: #57CC99;
+    width:200%;
+    margin-top: 10px;
 }
