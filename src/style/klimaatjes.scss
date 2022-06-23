@@ -1,4 +1,32 @@
 #pip-video{
-    width: 50vw;
+    width: 40vw;
+    border: solid 5px;
+}
 
+#toggle-button{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+      
+#toggle-button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#todo{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    text-align: center;
 }
