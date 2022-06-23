@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    border:0px;
+    padding: 0px;    
+}
+.skyline{
+    width: 100vw;
+    height: auto;
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+.title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content:center ;
+    color: #fff;
+    font-size: 32px;
+}
+.titleParent{
+    display: flex;
+    flex-direction: column;
+}
+.subtitleParent{
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    align-content: space-between;
+}
+.subtitle{
+    color: #57CC99;
+    width:200%;
+    margin-top: 10px;
+    margin-bottom: 3vh;
+}
