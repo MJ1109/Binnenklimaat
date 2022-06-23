@@ -1,0 +1,27 @@
+.climateInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-image: url('../assets/img/Plant-bg.svg');
+    background-size: cover;
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center bottom;
+
+        padding-top: 100px;
+
+        p{
+            width: 30vw;
+            padding: 20px;
+            margin-bottom: 10rem;
+
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+        }
+    }
+}
