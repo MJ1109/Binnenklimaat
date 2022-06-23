@@ -3,10 +3,9 @@ import'../style/klimaatjesSection.scss';
 
 function KlimaatjesSection() {
     return ( 
-        <div class="klimaatjesParent">
-            <Klimaatjes/>
-            <Klimaatjes/>
-            <Klimaatjes/>
+        <div className="klimaatjesParent">
+            <Klimaatjes name={'co2'}/>
+            <Klimaatjes name={'temp'}/>
         </div>
      );
 }

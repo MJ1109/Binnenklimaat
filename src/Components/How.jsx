@@ -9,8 +9,7 @@ function How() {
             <div class="titleParent">
                 <div className="subtitleParent"> 
                 <Line color="#57CC99" class="lineL"/>
-                <h3 className="subtitle">Grip op het binnenklimaat van de klas, met hulp van de Klimaatjes! <br/>
-                Kies welk klimaatje jij in de klas wilt hebben en wat hij vindt van het binnenklimaat. </h3>
+                <h3 className="subtitle">Hoe krijg je de Klimaatjes dan op je scherm? </h3>
                 <Line color="#57CC99" class="lineR"/>
                 </div>
             </div>
